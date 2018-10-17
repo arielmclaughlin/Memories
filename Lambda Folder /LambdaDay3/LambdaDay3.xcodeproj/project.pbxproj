@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8732468C216656C0002CA196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8732468B216656C0002CA196 /* AppDelegate.swift */; };
+		8732468E216656C0002CA196 /* PaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8732468D216656C0002CA196 /* PaintingViewController.swift */; };
+		87324691216656C0002CA196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8732468F216656C0002CA196 /* Main.storyboard */; };
+		87324693216656C0002CA196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87324692216656C0002CA196 /* Assets.xcassets */; };
+		87324696216656C0002CA196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87324694216656C0002CA196 /* LaunchScreen.storyboard */; };
+		873246A1216656C0002CA196 /* LambdaDay3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873246A0216656C0002CA196 /* LambdaDay3Tests.swift */; };
+		873246AC216656C0002CA196 /* LambdaDay3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873246AB216656C0002CA196 /* LambdaDay3UITests.swift */; };
+		873246BA2166573E002CA196 /* PaintingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873246B92166573E002CA196 /* PaintingTableViewCell.swift */; };
+		873246BC21665AA1002CA196 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873246BB21665AA1002CA196 /* Painting.swift */; };
+		873246BE21665AC8002CA196 /* PaintingTableViewCellDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = 873246BD21665AC8002CA196 /* PaintingTableViewCellDelegate .swift */; };
+		873246C021665ADB002CA196 /* PaintingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873246BF21665ADB002CA196 /* PaintingModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8732469D216656C0002CA196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87324680216656C0002CA196 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87324687216656C0002CA196;
+			remoteInfo = LambdaDay3;
+		};
+		873246A8216656C0002CA196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87324680216656C0002CA196 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87324687216656C0002CA196;
+			remoteInfo = LambdaDay3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87324688216656C0002CA196 /* LambdaDay3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LambdaDay3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8732468B216656C0002CA196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8732468D216656C0002CA196 /* PaintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingViewController.swift; sourceTree = "<group>"; };
+		87324690216656C0002CA196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87324692216656C0002CA196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87324695216656C0002CA196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87324697216656C0002CA196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8732469C216656C0002CA196 /* LambdaDay3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LambdaDay3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		873246A0216656C0002CA196 /* LambdaDay3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaDay3Tests.swift; sourceTree = "<group>"; };
+		873246A2216656C0002CA196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		873246A7216656C0002CA196 /* LambdaDay3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LambdaDay3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		873246AB216656C0002CA196 /* LambdaDay3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaDay3UITests.swift; sourceTree = "<group>"; };
+		873246AD216656C0002CA196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		873246B92166573E002CA196 /* PaintingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingTableViewCell.swift; sourceTree = "<group>"; };
+		873246BB21665AA1002CA196 /* Painting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
+		873246BD21665AC8002CA196 /* PaintingTableViewCellDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaintingTableViewCellDelegate .swift"; sourceTree = "<group>"; };
+		873246BF21665ADB002CA196 /* PaintingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87324685216656C0002CA196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87324699216656C0002CA196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873246A4216656C0002CA196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8732467F216656C0002CA196 = {
+			isa = PBXGroup;
+			children = (
+				8732468A216656C0002CA196 /* LambdaDay3 */,
+				8732469F216656C0002CA196 /* LambdaDay3Tests */,
+				873246AA216656C0002CA196 /* LambdaDay3UITests */,
+				87324689216656C0002CA196 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87324689216656C0002CA196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87324688216656C0002CA196 /* LambdaDay3.app */,
+				8732469C216656C0002CA196 /* LambdaDay3Tests.xctest */,
+				873246A7216656C0002CA196 /* LambdaDay3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8732468A216656C0002CA196 /* LambdaDay3 */ = {
+			isa = PBXGroup;
+			children = (
+				8732468B216656C0002CA196 /* AppDelegate.swift */,
+				8732468D216656C0002CA196 /* PaintingViewController.swift */,
+				873246BB21665AA1002CA196 /* Painting.swift */,
+				873246BD21665AC8002CA196 /* PaintingTableViewCellDelegate .swift */,
+				873246BF21665ADB002CA196 /* PaintingModel.swift */,
+				873246B92166573E002CA196 /* PaintingTableViewCell.swift */,
+				8732468F216656C0002CA196 /* Main.storyboard */,
+				87324692216656C0002CA196 /* Assets.xcassets */,
+				87324694216656C0002CA196 /* LaunchScreen.storyboard */,
+				87324697216656C0002CA196 /* Info.plist */,
+			);
+			path = LambdaDay3;
+			sourceTree = "<group>";
+		};
+		8732469F216656C0002CA196 /* LambdaDay3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				873246A0216656C0002CA196 /* LambdaDay3Tests.swift */,
+				873246A2216656C0002CA196 /* Info.plist */,
+			);
+			path = LambdaDay3Tests;
+			sourceTree = "<group>";
+		};
+		873246AA216656C0002CA196 /* LambdaDay3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				873246AB216656C0002CA196 /* LambdaDay3UITests.swift */,
+				873246AD216656C0002CA196 /* Info.plist */,
+			);
+			path = LambdaDay3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87324687216656C0002CA196 /* LambdaDay3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873246B0216656C0002CA196 /* Build configuration list for PBXNativeTarget "LambdaDay3" */;
+			buildPhases = (
+				87324684216656C0002CA196 /* Sources */,
+				87324685216656C0002CA196 /* Frameworks */,
+				87324686216656C0002CA196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LambdaDay3;
+			productName = LambdaDay3;
+			productReference = 87324688216656C0002CA196 /* LambdaDay3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8732469B216656C0002CA196 /* LambdaDay3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873246B3216656C0002CA196 /* Build configuration list for PBXNativeTarget "LambdaDay3Tests" */;
+			buildPhases = (
+				87324698216656C0002CA196 /* Sources */,
+				87324699216656C0002CA196 /* Frameworks */,
+				8732469A216656C0002CA196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8732469E216656C0002CA196 /* PBXTargetDependency */,
+			);
+			name = LambdaDay3Tests;
+			productName = LambdaDay3Tests;
+			productReference = 8732469C216656C0002CA196 /* LambdaDay3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		873246A6216656C0002CA196 /* LambdaDay3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873246B6216656C0002CA196 /* Build configuration list for PBXNativeTarget "LambdaDay3UITests" */;
+			buildPhases = (
+				873246A3216656C0002CA196 /* Sources */,
+				873246A4216656C0002CA196 /* Frameworks */,
+				873246A5216656C0002CA196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				873246A9216656C0002CA196 /* PBXTargetDependency */,
+			);
+			name = LambdaDay3UITests;
+			productName = LambdaDay3UITests;
+			productReference = 873246A7216656C0002CA196 /* LambdaDay3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87324680216656C0002CA196 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ariel M. McLaughlin";
+				TargetAttributes = {
+					87324687216656C0002CA196 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8732469B216656C0002CA196 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 87324687216656C0002CA196;
+					};
+					873246A6216656C0002CA196 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 87324687216656C0002CA196;
+					};
+				};
+			};
+			buildConfigurationList = 87324683216656C0002CA196 /* Build configuration list for PBXProject "LambdaDay3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8732467F216656C0002CA196;
+			productRefGroup = 87324689216656C0002CA196 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87324687216656C0002CA196 /* LambdaDay3 */,
+				8732469B216656C0002CA196 /* LambdaDay3Tests */,
+				873246A6216656C0002CA196 /* LambdaDay3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87324686216656C0002CA196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87324696216656C0002CA196 /* LaunchScreen.storyboard in Resources */,
+				87324693216656C0002CA196 /* Assets.xcassets in Resources */,
+				87324691216656C0002CA196 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8732469A216656C0002CA196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873246A5216656C0002CA196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87324684216656C0002CA196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873246BE21665AC8002CA196 /* PaintingTableViewCellDelegate .swift in Sources */,
+				873246C021665ADB002CA196 /* PaintingModel.swift in Sources */,
+				8732468E216656C0002CA196 /* PaintingViewController.swift in Sources */,
+				8732468C216656C0002CA196 /* AppDelegate.swift in Sources */,
+				873246BA2166573E002CA196 /* PaintingTableViewCell.swift in Sources */,
+				873246BC21665AA1002CA196 /* Painting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87324698216656C0002CA196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873246A1216656C0002CA196 /* LambdaDay3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873246A3216656C0002CA196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873246AC216656C0002CA196 /* LambdaDay3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8732469E216656C0002CA196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87324687216656C0002CA196 /* LambdaDay3 */;
+			targetProxy = 8732469D216656C0002CA196 /* PBXContainerItemProxy */;
+		};
+		873246A9216656C0002CA196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87324687216656C0002CA196 /* LambdaDay3 */;
+			targetProxy = 873246A8216656C0002CA196 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8732468F216656C0002CA196 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87324690216656C0002CA196 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87324694216656C0002CA196 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87324695216656C0002CA196 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		873246AE216656C0002CA196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		873246AF216656C0002CA196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		873246B1216656C0002CA196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP562MV2A4;
+				INFOPLIST_FILE = LambdaDay3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SprintModule.LambdaDay3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		873246B2216656C0002CA196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP562MV2A4;
+				INFOPLIST_FILE = LambdaDay3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SprintModule.LambdaDay3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		873246B4216656C0002CA196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP562MV2A4;
+				INFOPLIST_FILE = LambdaDay3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SprintModule.LambdaDay3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LambdaDay3.app/LambdaDay3";
+			};
+			name = Debug;
+		};
+		873246B5216656C0002CA196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP562MV2A4;
+				INFOPLIST_FILE = LambdaDay3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SprintModule.LambdaDay3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LambdaDay3.app/LambdaDay3";
+			};
+			name = Release;
+		};
+		873246B7216656C0002CA196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP562MV2A4;
+				INFOPLIST_FILE = LambdaDay3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SprintModule.LambdaDay3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LambdaDay3;
+			};
+			name = Debug;
+		};
+		873246B8216656C0002CA196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LP562MV2A4;
+				INFOPLIST_FILE = LambdaDay3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SprintModule.LambdaDay3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LambdaDay3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87324683216656C0002CA196 /* Build configuration list for PBXProject "LambdaDay3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873246AE216656C0002CA196 /* Debug */,
+				873246AF216656C0002CA196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873246B0216656C0002CA196 /* Build configuration list for PBXNativeTarget "LambdaDay3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873246B1216656C0002CA196 /* Debug */,
+				873246B2216656C0002CA196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873246B3216656C0002CA196 /* Build configuration list for PBXNativeTarget "LambdaDay3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873246B4216656C0002CA196 /* Debug */,
+				873246B5216656C0002CA196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873246B6216656C0002CA196 /* Build configuration list for PBXNativeTarget "LambdaDay3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873246B7216656C0002CA196 /* Debug */,
+				873246B8216656C0002CA196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87324680216656C0002CA196 /* Project object */;
+}

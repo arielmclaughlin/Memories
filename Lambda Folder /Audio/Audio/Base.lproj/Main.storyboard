@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Audio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lambda FM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-Wg-Bao">
+                                <rect key="frame" x="142.66666666666666" y="245" width="90" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-so-sZs">
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="XNa-Jv-y4t"/>
+                                    <barButtonItem systemItem="play" id="w3r-z1-1ph">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="kjv-x8-1J7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" systemItem="fixedSpace" id="Siv-t5-Y0e"/>
+                                    <barButtonItem enabled="NO" systemItem="pause" id="QI7-Fj-7tR">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="AwH-tx-fHd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="33W-uM-e9B"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haL-of-SWn">
+                                <rect key="frame" x="67" y="79" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.35802325065112228" blue="0.49154375503362102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="haL-of-SWn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7Zx-5C-Frt"/>
+                            <constraint firstItem="haL-of-SWn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F6n-5s-qRC"/>
+                            <constraint firstItem="tHL-Wg-Bao" firstAttribute="top" secondItem="haL-of-SWn" secondAttribute="bottom" constant="20" id="QIj-J5-266"/>
+                            <constraint firstItem="tHL-Wg-Bao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yX1-FB-ZtB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Zx-5C-Frt"/>
+                                <exclude reference="F6n-5s-qRC"/>
+                                <exclude reference="QIj-J5-266"/>
+                                <exclude reference="yX1-FB-ZtB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="7Zx-5C-Frt"/>
+                                <include reference="F6n-5s-qRC"/>
+                                <include reference="QIj-J5-266"/>
+                                <include reference="yX1-FB-ZtB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="QI7-Fj-7tR" id="OwW-8N-EFM"/>
+                        <outlet property="playButton" destination="w3r-z1-1ph" id="t3g-pr-BSF"/>
+                        <outlet property="player" destination="rA8-z2-2tL" id="t1o-IV-fWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="rA8-z2-2tL" customClass="AudioHelper" customModule="Audio" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
