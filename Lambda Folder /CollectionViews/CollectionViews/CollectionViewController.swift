@@ -2,59 +2,52 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
-    let reuseIndentifer = "cell"
-    let headerReuseIdentifier = "header"
+    let reuseIdentifier = "bob"
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: reuseIndentifer)
+        collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         
-        let headernib = UINib(nibName: "CollectionReusableHeaderView", bundle: nil)
-        collectionView.register(headernib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: headerReuseIdentifier )
+        collectionView.allowsMultipleSelection = true
     }
-    
-    
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return ColorHelper.shared.sectionCount
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIndentifer, for: indexPath) as? CollectionViewCell else {
-            fatalError("Inconsistent view state")
-        }
-        
-        cell.nameLabel.text = ColorHelper.shared.nameFor(indexPath: indexPath)
-        cell.swatch.backgroundColor = ColorHelper.shared.colorFor(indexPath: indexPath)
-        cell.layer.borderWidth = 1
-        
-        return cell
-}
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        guard let layout = self.collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
             fatalError("Unable to retrieve layout")
         }
         
-        let amount: CGFloat = 32
-        layout.sectionInset = UIEdgeInsets(top: amount, left: amount, bottom: amount, right: amount)
         layout.itemSize = CGSize(width: 80, height: 80)
-        layout.headerReferenceSize = CGSize(width: collectionView.bounds.width, height: 32)
     }
-
-    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        guard kind == UICollectionView.elementKindSectionHeader else {
-            fatalError("Failed header")
-        }
+    
+    //  override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    //    return 1
+    //  }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell
+            else { fatalError("Bad luck bob") }
         
-        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath) as? CollectionReusableHeaderView else {
-            fatalError("it's getting late")
-        }
+        cell.selectedBackgroundView = UIView()
+        cell.selectedBackgroundView?.backgroundColor = .yellow
         
-        header.nameLabel.text = ColorHelper.shared.keyFor(indexPath: indexPath)
+        return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        return  header
-}
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        
+    }
+    
 }
 
