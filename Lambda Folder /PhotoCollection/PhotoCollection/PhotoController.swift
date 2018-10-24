@@ -1,10 +1,26 @@
-import UIKit
+import Foundation
 
 class PhotoController {
-    let photos: [Photo] = []
+    //Array of Photos with type Photo
+    var photos: [Photo] = []
     
+    func create(imageData: Data, title: String) {
+        let photo = Photo(imageData: imageData, title: title)
+        photos.append(photo)
     }
 
-func Create() {
-    init(Photo: Photo)
+//Creates memory
+
+    func update(photo: Photo, imageData: Data, title: String) {
+        guard let index = photos.index(of: photo) else { return }
+        
+        var scratch = photo
+        scratch.imageData = imageData
+        scratch.title = title
+        
+        photos.remove(at: index)
+        photos.insert(scratch, at: index)
+}
+
+
 }
